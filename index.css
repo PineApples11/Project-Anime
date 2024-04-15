@@ -1,0 +1,97 @@
+body {
+   margin: 0;
+   font-family: 'Franklin Gothic Medium';
+   background-color: black;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color:white;
+    color: orangered;
+}
+
+nav{
+    margin-right: 20px;
+}
+
+/* .search-bar {
+    padding:10px;
+    border-top: 30px;
+    border-bottom: 30px;
+
+}
+
+.search button {
+    background-color: orangered;
+} */
+
+.slider-container{
+    overflow:hidden;
+    white-space: nowrap;
+    
+}
+.slider-container img {
+    height: 400px;
+    width: 400px;
+}
+
+.slider-image{
+    display: inline-block;
+    max-width: 100px;
+    transition: transform 0.5s ease;
+}
+
+h1{
+    text-align: center;
+    color: orangered;
+}
+.anime-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto); /* Set columns to auto to match the size of the content */
+    gap: 20px;
+}
+
+.anime-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: 150px; /* Set a smaller width for the anime card */
+    height: 250px; /* Set a smaller height for the anime card */
+}
+
+.anime-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    height: 200px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.info-container {
+    padding: 10px;
+}
+
+.add-to-watchlist {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
